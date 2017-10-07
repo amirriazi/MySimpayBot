@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/JobService" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/JobService" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="WebServiceReportJobInput">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Identity" nillable="true" type="tns:WebServiceIdentity" />
+      <xs:element minOccurs="0" name="Parameters" nillable="true" type="tns:WebServiceReportJobInputParams" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="WebServiceReportJobInput" nillable="true" type="tns:WebServiceReportJobInput" />
+  <xs:complexType name="WebServiceIdentity">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="JsonWebToken" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="WebServiceIdentity" nillable="true" type="tns:WebServiceIdentity" />
+  <xs:complexType name="WebServiceReportJobInputParams">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Body" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BusinessID" type="xs:int" />
+      <xs:element minOccurs="0" name="DeadLineDateTime" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EndPoint" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FetchExpirationAction" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FetchExpirationTime" type="xs:int" />
+      <xs:element minOccurs="0" name="IntervalTime" type="xs:int" />
+      <xs:element minOccurs="0" name="MaxFetchNumber" type="xs:int" />
+      <xs:element minOccurs="0" name="StartDateTime" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TypeName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UID" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="WebServiceReportJobInputParams" nillable="true" type="tns:WebServiceReportJobInputParams" />
+  <xs:complexType name="WebServiceReportJobOutput">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Status" nillable="true" type="tns:WebServiceStatus" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="WebServiceReportJobOutput" nillable="true" type="tns:WebServiceReportJobOutput" />
+  <xs:complexType name="WebServiceStatus">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="WebServiceStatus" nillable="true" type="tns:WebServiceStatus" />
+  <xs:complexType name="WebServiceReportResultInput">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Identity" nillable="true" type="tns:WebServiceIdentity" />
+      <xs:element minOccurs="0" name="Parameters" nillable="true" type="tns:WebServiceReportResultInputParams" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="WebServiceReportResultInput" nillable="true" type="tns:WebServiceReportResultInput" />
+  <xs:complexType name="WebServiceReportResultInputParams">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BusinessID" type="xs:int" />
+      <xs:element minOccurs="0" name="ReportDateTime" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Result" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UID" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="WebServiceReportResultInputParams" nillable="true" type="tns:WebServiceReportResultInputParams" />
+  <xs:complexType name="WebServiceReportResultOutput">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Status" nillable="true" type="tns:WebServiceStatus" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="WebServiceReportResultOutput" nillable="true" type="tns:WebServiceReportResultOutput" />
+</xs:schema>

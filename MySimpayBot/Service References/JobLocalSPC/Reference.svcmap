@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="fbdc0527-f225-44a4-bd8c-252bfe33bbed" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://JobService.simpay.ir/webservices/Core.svc?wsdl" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Core.xsd" MetadataType="Schema" ID="ad1b723e-3940-4f9d-b57d-7f62ce243565" SourceId="1" SourceUrl="http://jobservice.simpay.ir/webservices/Core.svc?xsd=xsd0" />
+    <MetadataFile FileName="Core1.xsd" MetadataType="Schema" ID="ab070090-7a4d-4519-b803-94a94a4a8a6e" SourceId="1" SourceUrl="http://jobservice.simpay.ir/webservices/Core.svc?xsd=xsd1" />
+    <MetadataFile FileName="Core2.xsd" MetadataType="Schema" ID="94681d27-eafb-48d6-ad29-6e5d7b3c3e17" SourceId="1" SourceUrl="http://jobservice.simpay.ir/webservices/Core.svc?xsd=xsd2" />
+    <MetadataFile FileName="Core.wsdl" MetadataType="Wsdl" ID="5b0aee54-0185-4781-b9c0-2064367d09a0" SourceId="1" SourceUrl="http://jobservice.simpay.ir/webservices/Core.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
